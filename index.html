@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اینداستری‌پلاست</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                DEFAULT: '#25408f',
+                dark: '#1a2e6b',
+                light: '#3a5fbd',
+              },
+            },
+          },
+        },
+      }
+    </script>
+    <!-- Loading B Yekan font from a reliable CDN -->
+    <link href="https://cdn.font-store.ir/b-yekan.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+      /* Global Font override */
+      body, * {
+        font-family: 'B Yekan', 'Yekan', 'Tahoma', sans-serif !important;
+      }
+      /* Fallback for specific poppins usage if needed for English numbers, 
+         but prioritize B Yekan as requested for "entire" app */
+      .font-poppins {
+        font-family: 'B Yekan', sans-serif;
+      }
+      
+      /* Smooth scrolling for the whole app */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #25408f;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #1a2e6b;
+      }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
